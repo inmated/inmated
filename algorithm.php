@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Алгоритм</title>
 </head>
-<body>
+<body style="font-family: Roboto, sans-serif; font-size: 20px;">
   <?php
     $x = $_GET['x'];
     echo $x.'<br>';
