@@ -31,7 +31,7 @@
       $age = '21';
       $mail = 'hs.revision@gmail.com';
       $address = 'Челябинск';
-      $info = 'Студент. Неплохо знаю HTML и CSS, изучаю JS и PHP. Главная цель - стать Full Stack разработчиком.';
+      $info = 'Неплохо знаю HTML и CSS, изучаю JS и PHP. Главная цель - стать Full Stack разработчиком.';
     ?>
     <table>
       <tr>
@@ -47,7 +47,7 @@
       </tr>
       <tr>
         <td>E-Mail</td>
-        <td><?= $mail ?></td>
+        <td><a <?= 'href="mailto:'.$mail.'"' ?>><?= $mail ?></a></td>
       </tr>
       <tr>
         <td>Город</td>
