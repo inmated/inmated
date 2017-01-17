@@ -8,7 +8,7 @@
 <body style="font-family: Roboto, sans-serif; font-size: 20px;">
   <?php
     $x = $_GET['x'];
-    echo $x.'<br>';
+    echo 'Число: '.$x.'<br>';
     $a = 1; $b = 1;
 
     while (true) {
