@@ -2,6 +2,10 @@
   <head>
     <title>Профиль</title>
     <meta charset="utf-8">
+    <?php
+      error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+    ?>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
       body {
@@ -22,10 +26,6 @@
     </style>
   </head>
   <body>
-    <?php
-      error_reporting(E_ALL);
-      ini_set('display_errors', 1);
-    ?>
     <?php
       $name = 'Антон';
       $age = '21';
