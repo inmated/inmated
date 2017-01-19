@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Алгоритм</title>
+  <meta charset="utf-8">
+  <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+  ?>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body style="font-family: Roboto, sans-serif; font-size: 20px;">
   <?php
-    $x = $_GET['x'];
-    echo 'Число: '.$x.'<br>';
-    $a = 1; $b = 1;
+    $input_variable = $_GET['x'];
+    echo 'Число: '.$input_variable.'<br>';
+    $first_variable = 1; $second_variable = 1;
 
     while (true) {
-      if ($a <= $x) {
-        if ($a == $x) {
+      if ($first_variable <= $input_variable) {
+        if ($first_variable == $input_variable) {
           echo "Задуманное число входит в числовой ряд.";
           break;
         }
         else {
-          $tmp = $a;
-          $a += $b;
-          $b = $tmp;
+          $tmp = $first_variable;
+          $first_variable += $second_variable;
+          $second_variable = $tmp;
         }
       }
       else {
